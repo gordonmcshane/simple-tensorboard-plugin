@@ -1,0 +1,29 @@
+# pyproject.toml
+[project]
+name = "tensorboard_plugin_service_status"
+version = "0.1.0"
+description = "TensorBoard plugin to show service health status"
+requires-python = ">=3.12"
+dependencies = [
+    "tensorboard>=2.19.0",
+]
+
+[project.entry-points."tensorboard_plugins"]
+service_status = "tensorboard_plugin_service_status.service_status_plugin:ServiceStatusPlugin"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["tensorboard_plugin_service_status"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+tensorboard_plugin_service_status = ["static/*"]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "isort>=6.0.1",
+]

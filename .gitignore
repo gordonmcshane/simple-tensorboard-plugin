@@ -1,0 +1,58 @@
+# === Node / React (TypeScript) ===
+node_modules/
+dist/
+build/
+.npm/
+.npmrc
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vite / Webpack / Other bundlers
+.vite/
+.cache/
+*.log
+
+# Editor specific
+.idea/
+.vscode/
+*.swp
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.log
+*.sqlite3
+*.db
+*.pid
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+.Python
+
+# === Test and Coverage ===
+.coverage
+.cache
+.tox/
+.nox/
+.pytest_cache/
+coverage.xml
+htmlcov/
+
+# === General OS files ===
+.DS_Store
+Thumbs.db
+
+# dont include compiled js
+tensorboard_plugin_service_status/**/*.js*
+
